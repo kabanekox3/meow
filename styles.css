@@ -13,4 +13,9 @@
     border: 1px solid black;
     width: 25px;
     height: 25px;
+    background-color: aliceblue;
+}
+
+.row-item:hover {
+    background-color: aquamarine;
 }
