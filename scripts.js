@@ -13,7 +13,7 @@ gridSizeButton.addEventListener("click", () => {
 
 // creates a rowLength x rowLength grid of empty divs
 function initialiseGrid(rowLength) {
-    
+
     gridExists = checkIfGridExists();
     if (gridExists == true) {
         deleteGrid();
@@ -37,6 +37,8 @@ function initialiseGrid(rowLength) {
         for (let columnIndex = 0; columnIndex < rowLength; columnIndex++) {
             let columnDiv = document.createElement("div");
             columnDiv.classList.add("row-item");
+            //let itemStyle = generateRandomColour();
+            //columnDiv.style.backgroundColor = itemStyle;
             gridRows[gridRow].appendChild(columnDiv);
         }
     }
@@ -61,4 +63,13 @@ function createGrid () {
     let gridContainer = document.createElement("div");
     main.appendChild(gridContainer);
     gridContainer.classList.add("grid-container");
+}
+
+// returns string
+function generateRandomColour () {
+    let red = Math.round(Math.random() * 255);
+    let green = Math.round(Math.random() * 255);
+    let blue = Math.round(Math.random() * 255);
+    let outputRGB = `rgb(${red}, ${green}, ${blue})`;
+    return outputRGB;
 }
