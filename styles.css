@@ -4,15 +4,27 @@
 
 #main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
     width: 400px;
     height: 400px;
     flex-wrap: wrap;
+}
+
+.grid-row {
+    flex: 1 1 auto;
+    display: flex;
 }
 
 .row-item {
     border: 1px solid black;
     width: 25px;
     height: 25px;
+    flex: 1 1 100%;
     background-color: aliceblue;
 }
 
