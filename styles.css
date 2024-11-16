@@ -5,24 +5,31 @@
 #main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 900px;
     margin: 0 auto 0 auto;
 }
 
 .grid-container {
     display: flex;
-    flex: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+}
+
+.row-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
 }
 
 .row-item {
     border: 1px solid black;
-    width: 25px;
-    height: 25px;
-    flex: 1 1 100%;
     background-color: aliceblue;
+    flex: 1 1 100%;
 }
 
 .row-item:hover {
