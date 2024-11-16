@@ -27,7 +27,7 @@
 }
 
 .row-item {
-    border: 1px solid black;
+    outline: 1px solid black;
     background-color: aliceblue;
     flex: 1 1 100%;
 }
