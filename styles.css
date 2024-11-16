@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+.row-item {
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+}
